@@ -53,7 +53,7 @@ check /etc/hosts (clear bad records ip4\ip6 with 127.x.x.x)
 set resolv.conf on master replica!
 
 ```bash
-ipa-client-install --mkhomedir --bildme=bildme.local --realm=BILDME.LOCAL --server=id1.bildme.local \
+ipa-client-install --mkhomedir --domain=bildme.local --realm=BILDME.LOCAL --server=id1.bildme.local \
 	--ntp-server=91.189.89.198 --ntp-server=91.189.91.157 --ntp-server=91.189.89.199 \
 	--hostname=`hostname -f` --enable-dns-updates
 ```
