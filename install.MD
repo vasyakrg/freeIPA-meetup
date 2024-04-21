@@ -100,7 +100,7 @@ apt update && apt upgrade -y
 apt-get install freeipa-client
 
 ipa-client-install --mkhomedir --hostname=`hostname -f` \
- --server=id1.bildme.local --server=id2.bildme.local --bildme=bildme.local --realm=BILDME.LOCAL \
+ --server=id1.bildme.local --server=id2.bildme.local --domain=bildme.local --realm=BILDME.LOCAL \
  --ntp-server=192.168.9.42 --ntp-server=192.168.9.45
  ```
 
