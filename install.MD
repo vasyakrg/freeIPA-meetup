@@ -145,7 +145,7 @@ check dns
 
 0. add new client to catalog
 ```bash
-ipa-client-install --mkhomedir --bildme=bildme.local --realm=BILDME.LOCAL --server=id1.bildme.local \
+ipa-client-install --mkhomedir --domain=bildme.local --realm=BILDME.LOCAL --server=id1.bildme.local \
 	--ntp-server=91.189.89.198 --ntp-server=91.189.91.157 --ntp-server=91.189.89.199 \
 	--hostname=`hostname -f` --enable-dns-updates
 ```
